@@ -15,7 +15,8 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-<platform name="android">
+
+    <platform name="android">
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
@@ -24,4 +25,5 @@
     </platform>
     <plugin name="onesignal-cordova-plugin" spec="^2.4.1" />
     <preference name="android-minSdkVersion" value="15" />
-    </widget>
+    <plugin name="cordova-admob" spec="^4.1.16" />
+</widget>
