@@ -11,11 +11,13 @@
     "license": "Apache-2.0",
     "dependencies": {
         "admob": "^5.5.0",
+        "cordova-admob": "^4.1.16",
         "onesignal-cordova-plugin": "^2.4.1"
     },
     "cordova": {
         "plugins": {
-            "onesignal-cordova-plugin": {}
+            "onesignal-cordova-plugin": {},
+            "cordova-admob": {}
         }
     }
 }
