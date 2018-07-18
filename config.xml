@@ -29,5 +29,4 @@
     </platform>
     <preference name="android-minSdkVersion" value="15" />
     <plugin name="onesignal-cordova-plugin" spec="^2.4.1" />
-    <plugin name="cordova-admob" spec="^4.1.16" />
-</widget>
+ </widget>
