@@ -44,25 +44,3 @@ var app = {
 };
 
 app.initialize();
-OneSignal.startInit(this)   
-   .setNotificationReceivedHandler(new ExampleNotificationReceivedHandler())
-   .init();
-   OneSignal.startInit(this)   
-   .setNotificationOpenedHandler(new ExampleNotificationOpenedHandler())
-   .init();
-
-document.addEventListener('deviceready', function () {
-  // Enable to debug issues.
-  // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-  
-  var notificationOpenedCallback = function(jsonData) {
-    console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
-  };
-
-  window.plugins.OneSignal
-    .startInit("e24cd419-e704-4dd1-bcb5-7185df9290fe")
-    .handleNotificationOpened(notificationOpenedCallback)
-    .endInit();
-}, false);
-
-

@@ -1,11 +1,17 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "HelloWorld",
-  "short_name": "HelloWorld",
-  "version": "com.example.hello",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "name": "Naat",
+  "short_name": "Naat",
+  "version": "com.naat.",
+  "description": "Naat collection for Ramadan.",
   "author": "Apache Cordova Team",
-  "icons": [],
+  "icons": [
+    {
+      "src": "img/images.jpg",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
   "start_url": "index.html"
 }
