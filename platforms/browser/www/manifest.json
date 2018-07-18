@@ -3,7 +3,7 @@
   "display": "standalone",
   "name": "Naat",
   "short_name": "Naat",
-  "version": "com.naat.",
+  "version": "com.naat.app",
   "description": "Naat collection for Ramadan.",
   "author": "Apache Cordova Team",
   "icons": [
