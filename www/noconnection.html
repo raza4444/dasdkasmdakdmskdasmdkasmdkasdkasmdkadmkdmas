@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Internet Connection Failed!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="\css\style.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet"  href="\css\loader.css">
+	<link rel="stylesheet"  href="\css\top-bar.css">
+	<link type="text/css" rel="stylesheet" href="css/demo.css" />
+		<link type="text/css" rel="stylesheet" href="dist/jquery.mmenu.css" />
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+</head>
+<body>
+<img src="img/WarningSign (1).png" style="width: 30%;
+    /* text-align: center; */
+    padding-top: 20%;
+    margin-left: 34%;
+    padding-left: 0%;" alt="Flowers in Chania">
+    <h2 style="      padding-left: 28%;"> Check Your Connection</h1>
+    <p style="padding-left: 10%;">	You don't seem to have an active internet connection. <br><span style="    padding-left: 8%;">
+    Please check your connection and try again. </span></p>
+    <button type="button" style="    margin-left: 42%;" onclick="connection()" > Try Again</button>
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+			<script src="js/icon.js"></script>
+			<script type="text/javascript" src="dist/jquery.mmenu.js"></script>
+		
+<script type="text/javascript">
+			function connection(){
+				$(document).ready(function() {
+                          
+							if(navigator.onLine){
+		                         window.location.href = "index.html";
+								
+								}			
+						
+					});
+					}						
+</script>
+
+</body>
+</html>
