@@ -24,6 +24,14 @@ module.exports = [
         "clobbers": [
             "OneSignal"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-app-version/www/AppVersionPlugin.js",
+        "id": "cordova-plugin-app-version.AppVersionPlugin",
+        "pluginId": "cordova-plugin-app-version",
+        "clobbers": [
+            "cordova.getAppVersion"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -31,7 +39,8 @@ module.exports.metadata =
 {
     "cordova-connectivity-monitor": "1.2.2",
     "cordova-admob": "4.1.16",
-    "onesignal-cordova-plugin": "2.4.1"
+    "onesignal-cordova-plugin": "2.4.1",
+    "cordova-plugin-app-version": "0.1.9"
 }
 // BOTTOM OF METADATA
 });

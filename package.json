@@ -12,12 +12,14 @@
     "dependencies": {
         "admob": "^5.5.0",
         "cordova-admob": "^4.1.16",
+        "cordova-plugin-app-version": "^0.1.9",
         "onesignal-cordova-plugin": "^2.4.1"
     },
     "cordova": {
         "plugins": {
             "onesignal-cordova-plugin": {},
-            "cordova-admob": {}
+            "cordova-admob": {},
+            "cordova-plugin-app-version": {}
         }
     }
 }

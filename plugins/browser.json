@@ -12,6 +12,9 @@
     },
     "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "com.naat.app"
     }
   },
   "dependent_plugins": {
