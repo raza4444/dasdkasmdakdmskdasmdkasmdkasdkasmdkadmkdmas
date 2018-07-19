@@ -10,7 +10,7 @@ document.addEventListener('deviceready', function () {
   };
 
   window.plugins.OneSignal
-    .startInit("YOUR_APPID")
+    .startInit("e24cd419-e704-4dd1-bcb5-7185df9290fe")
     .handleNotificationOpened(notificationOpenedCallback)
     .endInit();
 }, false);
