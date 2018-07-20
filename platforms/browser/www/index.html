@@ -248,7 +248,7 @@ poasd -->
 <!-- model box to show only embeded Videos  -->
 
 <!-- script -->
-
+<button onclick="check()">Click here to get packege</button>
 
 <script src="js/materialize.min.js"></script>
 <script src="js/loader.js"></script>
@@ -404,20 +404,13 @@ $.get("config.xml", function(data){
 
 	function check()
 	{
-
-			// finding application appName 
-        /* cordova.getAppVersion.getAppName(function (version) {
-		    alert(version);
-		});*/
-
 //package name 
-
-		/*cordova.getAppVersion.getPackageName(function(pkgname){
+cordova.getAppVersion.getPackageName(function(pkgname){
 		    // com.companyname.appname
 		    alert( pkgname);
 		});
 
-		*/
+		
 	}
 
 

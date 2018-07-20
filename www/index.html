@@ -404,11 +404,8 @@ $.get("config.xml", function(data){
 
 	function check()
 	{
-
-
 //package name 
-
-		cordova.getAppVersion.getPackageName(function(pkgname){
+cordova.getAppVersion.getPackageName(function(pkgname){
 		    // com.companyname.appname
 		    alert( pkgname);
 		});
