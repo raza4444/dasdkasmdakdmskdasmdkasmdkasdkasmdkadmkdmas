@@ -245,6 +245,7 @@ poasd -->
   </div>
 
 </div>
+<button onclick="check()">this is button</button>
 <!-- model box to show only embeded Videos  -->
 
 <!-- script -->
@@ -264,9 +265,7 @@ poasd -->
 <script>
 //packege name get
 	$(document).ready(function(){
-
-cordova.getAppVersion.getPackageName(function(pkgname){
-
+		var pkgname = "com.naat.app";
 var base_url = "http://appqubz-001-site1.etempurl.com";
 var settings = {
   "async": true,
@@ -297,9 +296,16 @@ $.ajax(settings).done(function (response) {
 	$('.inner_text_category').css('color', response.Color);
 	$('.w3-bar').css('background-color', response.Color);
 
-});		   
+});
+
+
+});
+	function check()
+	{
+		cordova.getAppVersion.getPackageName(function(pkgname){
+		   alert(pkgname);
 		});
-})
+	}
 	
 
 </script>
