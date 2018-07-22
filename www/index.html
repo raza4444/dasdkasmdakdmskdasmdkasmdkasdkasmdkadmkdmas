@@ -248,8 +248,6 @@ poasd -->
 <!-- model box to show only embeded Videos  -->
 
 <!-- script -->
-<button onclick="check()">Click here to get packege</button>
-
 <script src="js/materialize.min.js"></script>
 <script src="js/loader.js"></script>
 <script src="js/slick.min.js"></script>
@@ -262,6 +260,50 @@ poasd -->
 <script type="text/javascript" src="js/oneSignalNotificationPopup.js"></script>    
 
 <!--end of category slider integration js-->
+
+<script>
+//packege name get
+	$(document).ready(function(){
+
+
+cordova.getAppVersion.getPackageName(function(pkgname){
+		   var base_url = "http://appqubz-001-site1.etempurl.com";
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://appqubz-001-site2.etempurl.com/api/vi/GetApplicationSetting/PakegName?pakgeName="+pkgname,
+  "method": "GET",
+  "headers": {
+    "Cache-Control": "no-cache",
+    "Postman-Token": "03ce7257-9417-4006-963b-030143c6cdfe"
+  }
+}
+$.ajax(settings).done(function (response) {
+  console.log(response.Title);
+ var logo = response.Log.split('~');
+  var logo = base_url+logo[1];
+  $("#logo_src").attr("src",logo);
+  $(".model_logo_img").attr("src",logo);
+   var splah = response.SplashScreen.split('~')
+  var splashscreen = base_url+splah[1];
+    $('.loader').css('background-image', 'url(' + splashscreen + ')');
+	$( ".getname" ).html( response.Title );
+	$( "#descriptionId" ).html( response.Discraption );
+	$(".backgroundClor").css('background-color', response.Color);
+	$('.slider-slick .overlay').css('background','linear-gradient(to left,'+response.Color+', #c4c4c4)');
+	$('.slider-slick .overlay').css('background','-webkit-linear-gradient(to left,'+response.Color+', #c4c4c4)');
+
+	$('.text_category').css('background-color', response.Color);
+	$('.inner_text_category').css('color', response.Color);
+	$('.w3-bar').css('background-color', response.Color);
+
+});
+
+		});
+})
+	
+
+</script>
 <script>
 		$(document).ready(function()
 		{
@@ -335,13 +377,7 @@ $.get("config.xml", function(data){
 
 //getting data for logo from config.xml
 
-$.get("config.xml", function(data){
-	var logo_src = $(data).find('logo').attr('src'); 
-	$("#logo_src").attr("src",logo_src);
-	$(".model_logo_img").attr("src",logo_src);
-	
 
-});
 
 //getting data for slider from config.xml
 
@@ -352,34 +388,14 @@ $.get("config.xml", function(data){
 
  //getting name of application from xml 
 
- $.get("config.xml", function(data){
- 	var name = $(data).find('name').text();
- 	$( ".getname" ).html( name );
- })
+ 
 
 //getting description of application from xml 
 
-$.get("config.xml", function(data){
-	var description = $(data).find('description').text();
-	$( "#descriptionId" ).html( description );
 
-})
 //getting Background color  of footer and header from xml
 
-$.get("config.xml", function(data){
-	var color = $(data).find('colour').attr('getcolour'); 
-	$(".backgroundClor").css('background-color', color);
-	$('.slider-slick .overlay').css('background','linear-gradient(to left,'+color+', #c4c4c4)');
-	$('.slider-slick .overlay').css('background','-webkit-linear-gradient(to left,'+color+', #c4c4c4)');
 
-	$('.text_category').css('background-color', color);
-	$('.inner_text_category').css('color', color);
-	$('.w3-bar').css('background-color', color);
-
-
-	
-
-});
 
 /*
 				 $.get("config.xml", function(data){
@@ -402,16 +418,7 @@ $.get("config.xml", function(data){
 
 
 
-	function check()
-	{
-//package name 
-cordova.getAppVersion.getPackageName(function(pkgname){
-		    // com.companyname.appname
-		    alert( pkgname);
-		});
-
-		
-	}
+	
 
 
 

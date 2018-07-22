@@ -9,12 +9,7 @@ $(document).ready(function() {
 							$(this).hide();
 						});
 								//getting data for splash from congif.xml
-								$.get("config.xml", function(data){
-								    
-								    var imageUrl = $(data).find('splash').attr('src'); 
-								    $("#imageUrl").attr("src",imageUrl);
-								    $('.loader').css('background-image', 'url(' + imageUrl + ')');
-								})
+								
 
 					} 
 					else {
