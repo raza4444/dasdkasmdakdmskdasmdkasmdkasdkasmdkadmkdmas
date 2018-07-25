@@ -8,22 +8,28 @@ $.ajax({
         	var items = response.items;
         	var html= '';
         	$.each(items,function(index,item){
-                           var video_id = item.id.videoId;
-                           var title = item.snippet.title
+                           var vedio_id = item.id.videoId;
+                           var $title = item.snippet.title
+                           if ($title.length < 50) {
+                           var title = $title;
+                           }
+                           else {
+                           	var title = $title.slice(0 , 50)+'...';
+                           }
                            var image_url = item.snippet.thumbnails.default.url
-                          console.log(item.snippet.thumbnails.default.url);
+                         
         html += '<div style="margin-bottom:10px;" class="col s12">';
 	html += '<div class="entry video_list_div">';
 
 		html += '<img src="'+image_url+'" alt="" style="padding: 4px;border: 1px solid #c4c4c4;width: 100%;max-height: 235px;">';
 		html += '<div class="desc">';
 
-			html += '<a vedioId="'+video_id+'" onclick="videoModel(this)" ><h4 style="font-size: 26px;margin-left: 2px;font-family: timenewroman;font-weight: bold;padding-top: 8px;">'+title+'</h4></a>';
+			html += '<a vedioId="'+vedio_id+'" platform="youtube" style="color:#000 !important" onclick="videoModel(this)" ><h4 style="font-size: 26px;margin-left: 2px;font-family: timenewroman;font-weight: bold;padding-top: 8px;">'+title+'</h4></a>';
 		html += '</div>';
 	html += '</div>';
 html
 });
-       	$('#video_link').css('display','none');
+       	$('#img_link').css('display','none');
 		$('#video_list').html(html);
         },
         error: function(response) {
@@ -43,8 +49,13 @@ function getDailymotionBySearch(keyword , limitVideo) {
 		$.each(items,function(index,item){
 			
 			var vedio_id = item.id;
-			var title = item.title;
-			
+			var $title = item.title;
+			 if ($title.length < 50) {
+                           var title = $title;
+                           }
+                           else {
+                           	var title = $title.slice(0 , 50)+'...';
+                           }
 			var image_url = 'https://www.dailymotion.com/thumbnail/video/'+vedio_id+'';
 			var channel = item.channel;
 			
@@ -54,18 +65,14 @@ function getDailymotionBySearch(keyword , limitVideo) {
 		html += '<img src="'+image_url+'" alt="" style="padding: 4px;border: 1px solid #c4c4c4;width: 100%;max-height: 235px;">';
 		html += '<div class="desc">';
 
-			html += '<h4 style="font-size: 26px;margin-left: 2px;font-family: timenewroman;font-weight: bold;padding-top: 8px;">'+title+'</h4>';
+			html += '<a vedioId="'+vedio_id+'" platform="dailymotion" style="color:#000 !important" onclick="videoModel(this)" ><h4 style="font-size: 26px;margin-left: 2px;font-family: timenewroman;font-weight: bold;padding-top: 8px;">'+title+'</h4></a>';
 		html += '</div>';
 	html += '</div>';
 html += '</div>';
 });
-		$('#video_link').css('display','none');
+		$('#img_link').css('display','none');
 		$('#video_list').html(html);
-
-           /* console.log(response.list.id);
-             console.log(response.list.channel);*/
-
-	},
+},
 	 error: function(response) {
 
             console.log(response);
@@ -75,3 +82,23 @@ html += '</div>';
 //end dailymotion
 
 }
+
+function videoModel(object) {
+			var videoid = $(object).attr('vedioId');
+			var platform = $(object).attr('platform');
+			
+			//alert(videoid);
+			$('#myModal').css('display', 'none');
+			$('#videoModal').css('display', 'block');
+			if (platform == 'dailymotion') {
+			videourl = 'https://www.dailymotion.com/embed/video/'+videoid+'';
+			$('#videoplayer').attr('src' , videourl);
+	
+			}
+			if(platform == 'youtube')
+			{
+videourl = 'https://www.youtube.com/embed/'+videoid+'';
+			$('#videoplayer').attr('src' , videourl);
+			}
+			
+		}

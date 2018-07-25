@@ -9,7 +9,7 @@
 	<link  rel="shortcut icon" class="icon_href" href="">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">	
 	<!-- <link rel="stylesheet" href="css/slid.css">
-	 --><link rel="stylesheet" href="css/font-awesome.min.css">
+	 -->
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
@@ -20,12 +20,12 @@
 	<link rel="stylesheet" href="css/style1.css">
 	<link rel="stylesheet" href="css/loader.css">
 	<script type="text/javascript" src="cordova.js"></script>
-	<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  
-<script type = "text/javascript" 
-src = "js/jquery.min.js">
-</script>
-<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+  <script src="js/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="js/appsetting.js"></script>
 </head>
 <body class="home"  style="padding:0px; margin:0px; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
 	<!--loader image starts -->
@@ -54,110 +54,94 @@ src = "js/jquery.min.js">
 	</div>
 			<!-- end navbar -->
 			<!-- slider starts-->
-			<div class="the-slider" style="margin-top: -22px !important;">
-				
+		<!-- 	<div class="the-slider adsl"  style="margin-top: -22px !important;">
 					<div class="the-slider-entry">
-						<div class="slider-slick">
-							<div class="slider-entry">
-								<img id="slider_src" src="" alt="">
-								<div class="overlay"></div>
-								<div class="caption">
-							<!--slider 1 -->
-
-									<div class="container">
-									
-										<h2>Hafiz Owais Raza Qadri</h2>
-										
-									</div>
-							<!--slider 1 end -->
-
-								</div>
-							</div>
-
-							<!-- two sliers -->
-
-
-							<div class="slider-entry">
-								<div class="overlay"></div>
-								<img src="img/slider2.jpg" alt="">
-								<div class="caption">
-								<!--slider 2 starts -->
-
-									<div class="container">
-										<h2>Profaesar Abdul Rauf Roofi</h2>
-									</div>
-								<!--slider 2 end -->
-
-								</div>
-							</div>
-							<div class="slider-entry">
-								<div class="overlay"></div>
-								<img src="img/slider3.jpg" alt="">
-								<div class="caption">
-								<!--slider 3 starts -->
-
-									<div class="container">
-										<h2>Junaid Jamshed</h2>
-									</div>
-								<!--slider 3 end -->
-
-								</div>
-							</div>
-						</div>
-					</div>
-				
+						<div class="slider-slick"></div>
 			</div>
+		</div> -->
+			<!-- slider -->
+			<div id="MySlider">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
+    <!-- Indicators -->
+     <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+ 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      
+    </div>
 
-		
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+			</div>
+			
+			<!-- end slider -->
+		<div class="container">
+  
+  <div class='row'>
+    <div class='col-md-8'>
+      <div class="carousel slide media-carousel" id="media">
+        <div class="carousel-inner ">
+          <div class="item  active">
+            <div class="row">
+              <div class=" col-xs-4">
+                <a class="thumbnail" href="#"><img alt="" src="img/naatkhwan.jpg"></a>
+              </div>          
+              <div class="col-xs-4">
+                <a class="thumbnail" href="#"><img alt="" src="img/naatkhwan.jpg"></a>
+              </div>
+              <div class=" col-xs-4">
+                <a class="thumbnail" href="#"><img alt="" src="img/naatkhwan.jpg"></a>
+              </div>        
+            </div>
+          </div>
+           <div class="item">
+            <div class="row">
+              <div class="col-xs-4">
+                <a class="thumbnail" href="#"><img alt="" src="img/naatkhwan.jpg"></a>
+              </div>          
+              <div class=" col-xs-4">
+                <a class="thumbnail" href="#"><img alt="" src="img/naatkhwan.jpg"></a>
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <a class="thumbnail" href="#"><img alt="" src="img/naatkhwan.jpg"></a>
+              </div>        
+            </div>
+          </div>
+           <div class="item">
+            <div class="row">
+              <div class="col-md-4 col-xs-4">
+                <a class="thumbnail" href="#"><img alt="" src="img/naatkhwan.jpg"></a>
+              </div>          
+              <div class="col-md-4 col-xs-4">
+                <a class="thumbnail" href="#"><img alt="" src="img/naatkhwan.jpg"></a>
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <a class="thumbnail" href="#"><img alt="" src="img/naatkhwan.jpg"></a>
+              </div>      
+            </div>
+          </div>
+        </div>
+        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+        <a data-slide="next" href="#media" class="right carousel-control">›</a>
+      </div>                          
+    </div>
+  </div>
+</div>
    
-    <!-- section Category text slider  -->
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:150px;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
-        </div>
-        <div class='text_category' data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:150px;overflow:hidden;">
-        	<script>
-        		var category_html = '';
-			for(var y = 0; y<10; y++)
-			{
-				var category_name = 'naats';
-              category_html += '<div data-p="44">';
-              category_html += '<div  style="width: 100%;height: auto;text-align: center;padding-top: 15px;"><div class="inner_text_category" style="background-color: #fff;font-size: 31px;max-width: 93%;min-width: 57px;min-height: 100px;padding-top: 15px;border-radius: 50%;">'+category_name+'</div></div>';
-            category_html += '</div>';
-			} 
-			$('.text_category').html(category_html);
-			</script>
-            
-        </div>
-       
-        
-    </div>
-<!--End section Category text slider -->
-<!-- section Category Image slider -->
- <div id="jssor_2" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px; height:200px !important;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
-        </div>
-        <div class='image_category' data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:300px !important;overflow:hidden;">
-        	<script>
-        		var image_html = '';
-			for(var z= 0; z<10; z++)
-			{
-				
-              image_html += '<div data-p="44">';
-              image_html += '<img style="border: 1px solid #00008B;padding: 5px;" data-u="image" src="img/naatkhwan.jpg" />';
-            image_html += '</div>';
-			} 
-			$('.image_category').html(image_html);
-			</script>
-            
-        </div>
-        
-        
-    </div>
 
 <!--End section Category Image slider -->
 
@@ -182,8 +166,15 @@ poasd -->
 			<div class="container">
 				
 				<div class="row  ">
-					<div id="main_content"></div>				
+					<div id="main_content">
+						
+
+					</div>
 				</div>
+				<div class="row"><div id="main_content_wallpaper">
+						
+						
+					</div></div>
 			</div>
 </div>
 
@@ -201,12 +192,13 @@ poasd -->
 						<div class="fa fa-arrow-left" style="color: white; margin-top: 4%; margin-left: 2%; margin-right: 2%; font-size: 19px;" >
 						</div>
 						<img class="model_logo_img" src="" alt="" style="    margin-left:1%;margin-top: -1%;width: 46px;height: 46px;">
-    					<h4 class="post_title" style="margin-top: -8%;margin-left: 22%;color: white;width: 100%;">Hafiz Owais Raza Qadri</h4>
+    					<h4 class="post_title" style="margin-top: -8%;margin-left: 22%;color: white;width: 100%;"></h4>
     					</a>
 					</div>
 					<div   style="display: block;"> 
 					<iframe id='videoplayer' width="100%" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					<a class="btn btn-info btn-lg"> </a>
+					<a class="btn btn-info btn-lg" style="width: 100%;height: 54px;
+    margin-top: 11px;">Share </a>
 	</div>
 	<!--show video list-->
 	<br>
@@ -228,11 +220,11 @@ poasd -->
 						<div class="fa fa-arrow-left" style="color: white; margin-top: 4%; margin-left: 2%; margin-right: 2%; font-size: 19px;" >
 						</div>
 						<img class="model_logo_img" src="" alt="" style="    margin-left:1%;margin-top: -1%;width: 46px;height: 46px;">
-    					<h4 class ="post_title" style="margin-top: -8%;margin-left: 22%;color: white;width: 100%;">Hafiz Owais Raza Qadri</h4>
+    					<h4 class ="post_title" style="margin-top: -8%;margin-left: 22%;color: white;width: 100%;"></h4>
     					</a>
 					</div>
-					<div id="video_link" style="display: block;"> 
-					
+					<div id="img_link" style="display: block;"> 
+					<img id="wallpaper_url" class="img-responsive" src="http://appqubz-001-site1.etempurl.com/Content/AppImages/PostImages/636676003311611531_1.jpg">
 	</div>
 	<!--show video list-->
 	<br>
@@ -249,207 +241,99 @@ poasd -->
 <!-- model box to show only embeded Videos  -->
 
 <!-- script -->
-<script src="js/materialize.min.js"></script>
-<script src="js/loader.js"></script>
+<!-- <script src="js/materialize.min.js"></script> -->
 <script src="js/slick.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/custom.js"></script>
-
- <script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
- <script src="js/category_slide.js"></script>
+ <script src="js/videoPost.js"></script>
+  <script src="js/wallpaperPost.js"></script>
+ 
+<!-- 
+ <script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>-->
+ <script src="js/sliderSetting.js"></script>
+ <script src="js/admobSetting.js"></script>
 <script type="text/javascript" src="js/youtubeAndDailymotionSearch.js"></script>
 <script type="text/javascript" src="js/oneSignalNotificationPopup.js"></script>    
 
 <!--end of category slider integration js-->
-
 <script>
-//packege name get
-	$(document).ready(function(){
-		var pkgname = "com.naat.app";
-var base_url = "http://appqubz-001-site1.etempurl.com";
+
+
+//slider category image 
+$(document).ready(function(){
+	//media video 
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "http://appqubz-001-site2.etempurl.com/api/vi/GetApplicationSetting/PakegName?pakgeName="+pkgname,
+  "url": "http://appqubz-001-site2.etempurl.com/api/vi/GetAppSlider/PakegName?pakgeName=com.kitrina.xyz",
   "method": "GET",
   "headers": {
     "Cache-Control": "no-cache",
-    "Postman-Token": "03ce7257-9417-4006-963b-030143c6cdfe"
+    "Postman-Token": "7e06f881-5916-48c3-afd5-579215d9afd5"
   }
 }
+var base_url = "http://appqubz-001-site1.etempurl.com";
 $.ajax(settings).done(function (response) {
-  console.log(response.Title);
- var logo = response.Log.split('~');
-  var logo = base_url+logo[1];
-  $("#logo_src").attr("src",logo);
-  $(".model_logo_img").attr("src",logo);
-   var splah = response.SplashScreen.split('~')
-  var splashscreen = base_url+splah[1];
-    $('.loader').css('background-image', 'url(' + splashscreen + ')');
-	$( ".getname" ).html( response.Title );
-	$( "#descriptionId" ).html( response.Discraption );
-	$(".backgroundClor").css('background-color', response.Color);
-	$('.slider-slick .overlay').css('background','linear-gradient(to left,'+response.Color+', #c4c4c4)');
-	$('.slider-slick .overlay').css('background','-webkit-linear-gradient(to left,'+response.Color+', #c4c4c4)');
+ var $slidergalleryHtml = '';
+ var activeClass = '';
+	$.each( response, function( key, myresponse ) {
+		var title = myresponse.Title;
+		var description = myresponse.Discraption;
 
-	$('.text_category').css('background-color', response.Color);
-	$('.inner_text_category').css('color', response.Color);
-	$('.w3-bar').css('background-color', response.Color);
+		var url = myresponse.Url.split('~');
+		var image_url = base_url+url[1];
+		if(key%3 == 0){
+			activeClass = 'active';
+		}else{
+			activeClass = '';
+		}
+if (key%3 == 0){
+	$slidergalleryHtml	+=  '<div class="item  '+activeClass+'">';
+            $slidergalleryHtml	+=  '<div class="row">';
+            }
+            else
+            {
+            	$slidergalleryHtml	+= '';
+            }
 
-});
+              $slidergalleryHtml	+=  '<div class=" col-xs-4">';
+                $slidergalleryHtml	+=  '<a class="thumbnail" href="#"><img alt="" src="img/naatkhwan.jpg"></a>';
+              $slidergalleryHtml	+=  '</div>';          
+              $slidergalleryHtml	+=  '<div class="col-xs-4">';
+                $slidergalleryHtml	+=  '<a class="thumbnail" href="#"><img alt="" src="img/naatkhwan.jpg"></a>';
+              $slidergalleryHtml	+=  '</div>';
+              $slidergalleryHtml	+=  '<div class=" col-xs-4">';
+                $slidergalleryHtml	+=  '<a class="thumbnail" href="#"><img alt="" src="img/naatkhwan.jpg"></a>';
+              $slidergalleryHtml	+=  '</div>';    
+                 if (key%3 == 0){
+            $slidergalleryHtml	+=  '</div>';
+          $slidergalleryHtml	+=  '</div>';
+      }
+      else
+      {
+      	 $slidergalleryHtml += '';
+      }
+			                        
+	});
+	//console.log($slidergalleryHtml);
+//$('#media .carousel-inner').html($slidergalleryHtml);
+
+      
+   });
 
 
-});
-	function check()
-	{
-		cordova.getAppVersion.getPackageName(function(pkgname){
-		   alert(pkgname);
-		});
-	}
+})
+	
 	
 
 </script>
 <script>
-		$(document).ready(function()
-		{
-			var html = '';
-			var name = 'raza';
-			for(var i=0; i<10; i++)
-			{
-	html += '<a class="col-sm-12" data-toggle="modal" id="'+i+'" onclick="openModel(this)" >';
-					html += '<div id="modelid_'+i+'" style="margin-bottom:10px;" class="col eachsize" >';
-						html +=	'<div class="entry ">';
-							html +=	'<img src="img/download (1).jpg" alt="" >';
-							html += '<div class="desc">';
-								html +=	'<p style="text-align:center;">Hafiz Owais Raza Qadri</p>';								
-							html += '</div>';
-						html += '</div>';
-					html += '</div>';
-				html += '</a>';
-					
-			}
-			$('#main_content').html(html);
-  
-		});
 
-
-		function openModel(object) {
-var id = $(object).attr('id');
-$('#myModal').css('display', 'block');
-//youtube
-var stringKeyword = 'sweeming pool';
-var keyword = stringKeyword.split(' ').join('+');
-var type = 'video';
-var limitVideo = 5;
-$('#video_link').css('display','none');
-getyoutubeVideoBySearch(keyword, type , limitVideo);
-//end youtube
-//getDailymotionBySearch(keyword , limitVideo);
-//dailymotion
-		}
-		function videoModel(object) {
-			var videoid = $(object).attr('vedioId');
-			//alert(videoid);
-			$('#myModal').css('display', 'none');
-			$('#videoModal').css('display', 'block');
-			videourl = 'https://www.youtube.com/embed/'+videoid+'';
-			$('#videoplayer').attr('src' , videourl);
-
-		}
-$("#closeModel").click(function(){
-	$('#myModal').css('display', 'none');
+$(document).ready(function() {
+  $('#media').carousel({
+    pause: true,
+    interval: false,
+  });
 });
-$("#closeVideoModel").click(function(){
-	$('#videoModal').css('display', 'none');
-	$('#myModal').css('display', 'block');
-});
-
-
-</script>
-
-<script >
-
-	$(document).ready(function(){
-if(navigator.onLine){
-			$(".complete").hide();
-
-//getting data for icon  from config.xml
-
-$.get("config.xml", function(data){
-	var icon_src = $(data).find('favicon').attr('src'); 
-	$("#icon_href").attr("href",icon_src);
-});
-
-//getting data for logo from config.xml
-
-
-
-//getting data for slider from config.xml
-
-$.get("config.xml", function(data){
-	var slider_src = $(data).find('slider').attr('src'); 
-	$("#slider_src").attr("src",slider_src);
-});
-
- //getting name of application from xml 
-
- 
-
-//getting description of application from xml 
-
-
-//getting Background color  of footer and header from xml
-
-
-
-/*
-				 $.get("config.xml", function(data){
-			var size = $(data).find('size').attr('divsize'); 
-			$(".eachsize").css('width', size);*/
-			
-			/*});*/
-			$('.eachsize').addClass("s6");
-
-
-
-
-		} 
-		else {
-
-			window.location.href = "noconnection.html";
-		}
-	});
-
-
-
-
-	
-
-
-
-jQuery(document).ready(function() {
-        
-	jQuery('.carousel[data-type="multi"] .item').each(function(){
-		var next = jQuery(this).next();
-		if (!next.length) {
-			next = jQuery(this).siblings(':first');
-		}
-		next.children(':first-child').clone().appendTo(jQuery(this));
-	  
-		for (var i=0;i<2;i++) {
-			next=next.next();
-			if (!next.length) {
-				next = jQuery(this).siblings(':first');
-			}
-			
-			next.children(':first-child').clone().appendTo($(this));
-		
-		}
-	
-	});
-        
-});
-
 </script>
 </body>
 </html>

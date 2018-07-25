@@ -10,7 +10,7 @@
     <content src="index.html" />
     <access origin="*" />
     <slider src="img/slider1.jpg" />
-    <icon src="img/images.jpg" />
+    <icon src="res/icon/android/images.jpg" />
     <splash height="480" src="img/splash.png" width="320" />
     <logo src="img/logo1.png" />
     <colour getcolour="#00008B" />

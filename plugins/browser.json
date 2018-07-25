@@ -15,11 +15,17 @@
     },
     "cordova-plugin-app-version": {
       "PACKAGE_NAME": "com.naat.app"
+    },
+    "cordova-plugin-admob-simple": {
+      "PACKAGE_NAME": "com.naat.app"
     }
   },
   "dependent_plugins": {
     "cordova-connectivity-monitor": {
       "PACKAGE_NAME": "com.example.hello"
+    },
+    "cordova-admob-sdklibs": {
+      "PACKAGE_NAME": "com.naat.app"
     }
   }
 }

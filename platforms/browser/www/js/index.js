@@ -28,17 +28,35 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+        
     },
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+  /**/
+      if(navigator.onLine) 
+    {
+       /* cordova.getAppVersion.getPackageName(function(pkgname){
+           alert(pkgname);
+        });*/
+       var response =  appSetting('com.naat.app');
+      var rowSize = response[0];
+        sliderSettingWithData();
+        showVideoPost(rowSize);
+        showWallaperPost(rowSize);
+       oneSignalNotification('e24cd419-e704-4dd1-bcb5-7185df9290fe');
+        //admob start
+        initAd('ca-app-pub-3940256099942544/6300978111' , 'ca-app-pub-3940256099942544/1033173712');
+        showBannerFunc();
+        showInterstitialFunc();
+        //admob end
+    
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
+    }
+    else
+    {
+        window.location.href = "noconnection.html";
+    }  
         console.log('Received Event: ' + id);
     }
 };

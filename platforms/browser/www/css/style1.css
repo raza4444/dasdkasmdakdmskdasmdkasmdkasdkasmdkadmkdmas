@@ -18,7 +18,7 @@ body, html {
 .modal .modal-content {
    
     height: auto;
-    min-height: 623px;
+    min-height: 100%;
 }
 .modal
 {
@@ -181,3 +181,83 @@ float:left;
 box-shadow:-1px 1px 2px rgba(0,0,0,0.1);
 }
 }
+.caption {
+    margin-top: -94px;
+    text-align: center;
+    color: #fff;
+    }
+    .caption h2
+    {
+        color: #fff;
+            margin-top: -30px;
+
+    }
+
+.carousel-indicators li
+{
+        width: 35px !important;
+    
+}
+/* carousel */
+.media-carousel 
+{
+  margin-bottom: 0;
+  padding: 0px;
+  margin-top: -22px;
+  height: 110px;
+}
+/* Previous button  */
+.media-carousel .carousel-control.left 
+{
+  left: -12px;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 30px
+}
+/* Next button  */
+.media-carousel .carousel-control.right 
+{
+  right: -12px !important;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 30px
+}
+/* Changes the position of the indicators */
+.media-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.media-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+.media-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+.media-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+#media .col-xs-4
+{
+        padding-right: 2px !important;
+    padding-left: 2px !important;
+}
+}
+
+

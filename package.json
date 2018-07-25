@@ -12,6 +12,9 @@
     "dependencies": {
         "admob": "^5.5.0",
         "cordova-admob": "^4.1.16",
+        "cordova-admob-sdklibs": "^2.1.6",
+        "cordova-android": "^7.0.0",
+        "cordova-plugin-admob-simple": "^3.3.4",
         "cordova-plugin-app-version": "^0.1.9",
         "onesignal-cordova-plugin": "^2.4.1"
     },
@@ -19,7 +22,8 @@
         "plugins": {
             "onesignal-cordova-plugin": {},
             "cordova-admob": {},
-            "cordova-plugin-app-version": {}
+            "cordova-plugin-app-version": {},
+            "cordova-plugin-admob-simple": {}
         }
     }
 }
